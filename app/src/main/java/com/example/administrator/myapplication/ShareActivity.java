@@ -16,6 +16,7 @@ public class ShareActivity {
         intent.setType("application/octet-stream");
         intent.putExtra(Intent.EXTRA_STREAM, Uri.parse("file:///storage/emulated/0/temp/1.ics"));
 
+        
         Intent chooser = Intent.createChooser(intent, "공유");
 
         return chooser;
